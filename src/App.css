@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes lls-login-width-animation {
+  0% {
+    width: 1px;
+  }
+
+  40% {
+    width: 91px;
+  }
+
+  60% {
+    width: 91px;
+  }
+
+  100% {
+    width: 1px;
+  }
+}
