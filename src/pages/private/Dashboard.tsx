@@ -4,7 +4,7 @@ import StockFeed from '../../components/StockFeed';
 import { useNavigate } from 'react-router-dom';
 import { doLogout } from '../../auth';
 
-const Dashboard = () => {
+const Dashboard: React.FC = () => {
     const [loader, SetLoader] = useState<Boolean>(true);
     const [StockData, setStockData] = useState<any>([]);
     const [stockName,setStockName] = useState("");

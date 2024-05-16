@@ -5,7 +5,7 @@ import { Field, Form, Formik } from "formik";
 import { signupValidation } from "../auth/SignupValidation";
 import { Link, useNavigate } from "react-router-dom";
 import { registerUser } from "../services/userService";
-const Signup = () => {
+const Signup: React.FC = () => {
   const navigate = useNavigate();
   const initialValues: SignUpFormValues = {
     name: "",
@@ -29,7 +29,7 @@ const Signup = () => {
       }else{
         console.log(res);
       }
-    } catch (error) {
+    } catch (error:any) {
       if(error?.response.status === 400){
         toast.error("error.response.data.message");
       }

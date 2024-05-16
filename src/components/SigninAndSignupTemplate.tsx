@@ -1,6 +1,10 @@
-import React, { Children } from "react"
+import React, { Children, ReactNode } from "react"
 
-const SigninAndSignupTemplate = ({children}) => {
+interface SigninAndSignupTemplateProps {
+    children: ReactNode;
+  }
+
+const SigninAndSignupTemplate: React.FC<SigninAndSignupTemplateProps> = ({children}) => {
   return (
     <>
         <div className="relative h-screen w-screen" style={{backgroundImage: 'url("https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/_next/static/media/modelBackground.e047cd82.svg")'}}>

@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../services/userService";
 import { doLogin } from "../auth";
-const Signin = () => {
+const Signin: React.FC = () => {
   const navigate = useNavigate();
   const initialValues: LoginFormValues = {
     email: "",

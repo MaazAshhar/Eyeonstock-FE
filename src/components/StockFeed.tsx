@@ -1,6 +1,16 @@
 import React from "react";
 
-const StockFeed = ({ stockName, low, high, open, close, volume, stockInWatchlist }) => {
+interface StockFeedProps {
+  stockName: any;
+  low: any;
+  high: any;
+  open: any;
+  close: any;
+  volume: any;
+  stockInWatchlist: any;
+}
+
+const StockFeed: React.FC<StockFeedProps> = ({ stockName, low, high, open, close, volume, stockInWatchlist }) => {
   return (
     <div className="flex flex-col gap-4 justify-between items-center w-full border border-gray-100 rounded-xl p-5">
       <div className="flex flex-row w-full justify-between items-center">
